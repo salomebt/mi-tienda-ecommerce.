@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>mi primera tienda</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda de Salome</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+</head>
+<body>
+  <h1>Tienda de Salome</h1>
+  <p class="frase">✨ ¡Descubre los peluches más tiernos hechos a mano! ✨</p>
+
+  <label for="categoria">Filtrar por categoría:</label>
+  <select id="categoria" onchange="filtrarPorCategoria()">
+    <option value="todos">Todas</option>
+    <option value="Gallinas">Gallinas</option>
+    <option value="Gatos">Gatos</option>
+    
+  </select>
+
+  <div id="productos"></div>
+
+  <div class="carrito">
+    <h2>🧾 Carrito de Compras</h2>
+    <p><strong>Productos en carrito: <span id="cantidad">0</span></strong></p>
+    <ul id="lista-carrito"></ul>
+    <p><strong>Total: $<span id="total">0.00</span></strong></p>
+    <button class="vaciar" onclick="vaciarCarrito()">🧼 Vaciar Carrito</button>
+    <button class="finalizar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+    <div id="paypal-button-container" style="margin-top: 15px;"></div>
+  </div>
+
+  <p class="autor">Autor: Salome</p>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
